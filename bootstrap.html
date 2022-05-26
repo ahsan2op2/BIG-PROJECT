@@ -1,0 +1,79 @@
+<html>
+	<head>
+		<title>Demo Background Video</title>
+		<style type="text/css">
+				.fullscreen_bg 
+				{
+					position:fixed;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					overflow:hidden;
+					z-index:-1;
+					background-size:cover;
+				}
+
+				.fullscreen_bg_video 
+				{
+					position:fixed;
+					width: auto;
+					height: auto;
+					min-width: 100%;
+					min-height: 100%;
+				}
+				
+		</style>
+    </head>
+    <body>
+		<div class="container">
+			<<form action="action_page.php">
+		  
+			  <label for="superhero">select your superhero</label>
+                                                       <select id="superhero>name="superhero">
+                                                                 <option value="spider man">spider man</option>
+                                                                 <option value="iron man">iron man</option>
+                                                                 <option value="dr. strange">dr. strange</option>
+                                                                 <option value="batman">batman</option>
+                                                                <option value="hulk">hulk</option>
+                                                                <option value="">dr. strange</option>
+                                                                <option value="thor">thor</option>
+</select>			  
+		  
+			 <label for="villain">select your villain</label>
+			<select id="villain">name="villain">  
+		                  <option value="thanos">thanos</option>
+                                                     <option value="gorr">gorr</option>  
+                                                     <option value="dr. octopus">dr. octopus</option>
+                                                     <option value="green goblin">green goblin</option>
+                                                      <option value="dr. doom">dr. doom</option></select>
+			  
+                                                       <label for="country">Country</label>
+                                                            <select id="country" name="country">
+				<option value="india">India</option>
+				<option value="canada">Canada</option>
+				<option value="usa">USA</option>
+                                                                      <option value="gothame">gothame</option>
+                                                                      <option value="wakanda">wakanda</option>
+                                                                      <option value="avenger tower">Avenger tower</option>
+                                                                      <option value="krypton">krypton</option>
+                                                                      <option value="oscorp">oscorp</option>
+                                                                      <option value="kamartaj">kamartaj</option>
+			  </select>
+		  
+			  <label for="subject">Subject</label>
+			  <textarea id="subject" name="subject" placeholder="Write something.." style="height:50px"></textarea>
+		  
+			  <input type="submit" value="Submit">
+		  
+			</form>
+		  </div>
+        
+		<div class="fullscreen_bg">
+            <video src="C:\Users\student\Downloads\Marvel Opening Theme.mp4" autoplay loop muted class="fullscreen_bg_video"></video>
+        </div>
+		
+	
+		
+    </body>
+</html>
